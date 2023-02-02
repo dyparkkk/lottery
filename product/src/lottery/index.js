@@ -212,9 +212,9 @@ function bindEvent() {
     if (isLotting) {
       if (e.target.id === "lottery") {
         rotateObj.stop();
-        btns.lottery.innerHTML = "开始抽奖";
+        btns.lottery.innerHTML = "제비 돌리기";
       } else {
-        addQipao("正在抽奖，抽慢一点点～～");
+        addQipao("추첨중이에요~~");
       }
       return false;
     }
@@ -229,7 +229,7 @@ function bindEvent() {
       // 进入抽奖
       case "enter":
         removeHighlight();
-        addQipao(`马上抽取[${currentPrize.title}],不要走开。`);
+        addQipao(` [${currentPrize.title}] 뽑기 중입니다 `);
         // rotate = !rotate;
         rotate = true;
         switchScreen("lottery");
@@ -237,12 +237,12 @@ function bindEvent() {
       // 重置
       case "reset":
         let doREset = window.confirm(
-          "是否确认重置数据，重置后，当前已抽的奖项全部清空？"
+          "리셋하시겠습니까？"
         );
         if (!doREset) {
           return;
         }
-        addQipao("重置所有数据，重新抽奖");
+        addQipao("모든 데이터 초기화");
         addHighlight();
         resetCard();
         // 重置所有数据
@@ -267,16 +267,16 @@ function bindEvent() {
           // 抽奖
           lottery();
         });
-        addQipao(`正在抽取[${currentPrize.title}],调整好姿势`);
+        addQipao(` [${currentPrize.title}] 뽑기중`);
         break;
       // 重新抽奖
       case "reLottery":
         if (currentLuckys.length === 0) {
-          addQipao(`当前还没有抽奖，无法重新抽取喔~~`);
+          addQipao(`재추첨 불가합니다~~`);
           return;
         }
         setErrorData(currentLuckys);
-        addQipao(`重新抽取[${currentPrize.title}],做好准备`);
+        addQipao(`다시 뽑기 준비 :[${currentPrize.title}]`);
         setLotteryStatus(true);
         // 重新抽奖则直接进行抽取，不对上一次的抽奖数据进行保存
         // 抽奖
@@ -293,7 +293,7 @@ function bindEvent() {
             currentLuckys = [];
           });
           exportData();
-          addQipao(`数据已保存到EXCEL中。`);
+          addQipao(`엑셀에 저장하는 중입니다`);
         });
         break;
     }
@@ -511,7 +511,7 @@ function selectCard(duration = 600) {
 
   let text = currentLuckys.map(item => item[1]);
   addQipao(
-    `恭喜${text.join("、")}获得${currentPrize.title}, 新的一年必定旺旺旺。`
+    `${currentPrize.title}이 당첨되신 ${text.join("、")}님 축하합니다 !!`
   );
 
   selectedCardIndex.forEach((cardIndex, index) => {
@@ -616,7 +616,7 @@ function lottery() {
   //   btns.lottery.innerHTML = "开始抽奖";
   //   return;
   // }
-  btns.lottery.innerHTML = "结束抽奖";
+  btns.lottery.innerHTML = "뽑기";
   rotateBall().then(() => {
     // 将之前的记录置空
     currentLuckys = [];
@@ -628,7 +628,7 @@ function lottery() {
       leftPrizeCount = currentPrize.count - (luckyData ? luckyData.length : 0);
 
     if (leftCount < perCount) {
-      addQipao("剩余参与抽奖人员不足，现在重新设置所有人员可以进行二次抽奖！");
+      addQipao("로또 참여 인원이 얼마 남지 않았습니다. 이제 모든 인원을 초기화하여 2차 로또를 만드세요.！");
       basicData.leftUsers = basicData.users.slice();
       leftCount = basicData.leftUsers.length;
     }
@@ -855,7 +855,7 @@ window.onload = function () {
             animate();
           },
           () => {
-            addQipao("背景音乐自动播放失败，请手动播放！");
+            addQipao("배경 음악 자동 재생에 실패했습니다. 수동으로 재생하세요!");
           }
         );
       } else {
