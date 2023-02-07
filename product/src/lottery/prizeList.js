@@ -247,9 +247,9 @@ let setPrizeData = (function () {
     }
 
     if (currentPrizeIndex === 0) {
-      prizeElement.prizeType.textContent = "커피 기프티콘";
+      prizeElement.prizeType.textContent = " ";
       prizeElement.prizeText.textContent = " ";
-      prizeElement.prizeLeft.textContent = "10명";
+      prizeElement.prizeLeft.textContent = "10";
       return;
     }
 

@@ -477,7 +477,7 @@ function selectCard(duration = 600) {
     tag = -(currentLuckys.length - 1) / 2,
     locates = [];
 
-  // 计算位置信息, 大于5个分两排显示
+  // 5개 이상이면 두번째 줄로 
   if (currentLuckys.length > 5) {
     let yPosition = [-87, 87],
       l = selectedCardIndex.length,
