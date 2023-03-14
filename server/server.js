@@ -144,12 +144,12 @@ router.post("/export", (req, res, next) => {
     outData = outData.concat(luckyData[item.type] || []);
   });
 
-  writeXML(outData, "/抽奖结果.xlsx")
+  writeXML(outData, "/당첨자.xlsx")
     .then(dt => {
       // res.download('/抽奖结果.xlsx');
       res.status(200).json({
         type: "success",
-        url: "抽奖结果.xlsx"
+        url: "당첨자.xlsx"
       });
       log(`导出数据成功！`);
     })
