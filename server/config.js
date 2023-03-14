@@ -10,29 +10,71 @@ const prizes = [
   {
     type: 0,
     count: 1000,
-    title: "",
-    text: "커피 기프티콘"
+    title: "커피 기프티콘",
+    text: ""
   },
   {
     type: 1,
-    count: 2,
-    text: "特等奖",
-    title: "상품권",
-    img: "../img/secrit.jpg"
+    count: 1,
+    text: "",
+    title: "화이트와인",
+    img: "../img/whiteWine.png"
   },
   {
     type: 2,
-    count: 5,
+    count: 1,
     text: "",
-    title: "와인",
-    img: "../img/mbp.jpg"
+    title: "레드와인",
+    img: "../img/redWine.png"
+  },
+  {
+    type: 3,
+    count: 1,
+    text: "",
+    title: "스타벅스 상품권(50,000원)",
+    img: "../img/starbucks.png"
+  },
+  {
+    type: 4,
+    count: 1,
+    text: "",
+    title: "스타벅스 상품권(30,000원)",
+    img: "../img/starbucks.png"
+  },
+  {
+    type: 5,
+    count: 2,
+    text: "",
+    title: "판교 호감샌드",
+    img: "../img/sand.png"
+  },
+  {
+    type: 6,
+    count: 4,
+    text: "",
+    title: "무너달력",
+    img: "../img/muno.png"
+  },
+  {
+    type: 7,
+    count: 1,
+    text: "",
+    title: "CJ 통합 기프트카드(55,000원)",
+    img: "../img/CJGiftCard.png"
+  },
+  {
+    type: 8,
+    count: 1,
+    text: "",
+    title: "CJ 통합 기프트카드(35,000원)",
+    img: "../img/CJGiftCard.png"
   }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 3, 5];
+const EACH_COUNT = [5, 1, 1, 1, 1, 2, 4, 1, 1];
 
 /**
  * 卡片公司名称标识
