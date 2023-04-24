@@ -208,7 +208,7 @@ function loadData() {
   let cfgData = {};
 
   // curData.users = loadXML(path.join(cwd, "data/users.xlsx"));
-  curData.users = loadXML(path.join(dataBath, "data/users.xlsx"));
+  curData.users = loadXML(path.join(dataBath, "data/teams.xlsx"));
   // 重新洗牌
   shuffle(curData.users);
 
