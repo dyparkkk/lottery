@@ -40,6 +40,7 @@ let camera,
   };
 
 let rotateObj;
+let preTeam = "none";
 
 let selectedCardIndex = [],
   rotate = false,
@@ -242,6 +243,7 @@ function bindEvent() {
         if (!doREset) {
           return;
         }
+        preTeam = "none";
         addQipao("모든 데이터 초기화");
         addHighlight();
         resetCard();
@@ -632,12 +634,27 @@ function lottery() {
       basicData.leftUsers = basicData.users.slice();
       leftCount = basicData.leftUsers.length;
     }
+    // for(let i=0; i<leftCount; i++){
+    //   addQipao(`index=${i}, name=${basicData.leftUsers[i]}`);
+    // }
 
+    //////////////// 여기
     for (let i = 0; i < perCount; i++) {
       let luckyId = random(leftCount);
+      addQipao();
+      while(true){
+        if(checkTeam(luckyId, preTeam)){
+          break;
+        }
+        luckyId = random(leftCount);
+      }
+      
+      // let luckyId = random(leftCount);
       currentLuckys.push(basicData.leftUsers.splice(luckyId, 1)[0]);
       leftCount--;
       leftPrizeCount--;
+      
+      
 
       let cardIndex = random(TOTAL_CARDS);
       while (selectedCardIndex.includes(cardIndex)) {
@@ -653,6 +670,29 @@ function lottery() {
     // console.log(currentLuckys);
     selectCard();
   });
+}
+
+function checkTeam(luckyId){
+  let users = basicData.leftUsers[luckyId].slice();
+  let str = new String(users[2]);
+  // addQipao(`preTeam = ${preTeam}, now = ${str}`);
+  if(preTeam == "none"){
+    if (str == 'dev'){
+      preTeam = 'dev';
+    }
+    else if (str=='BIZ'){
+      preTeam = 'BIZ';
+    }
+    return true;
+  }
+
+  if(preTeam == "dev" && str == 'dev'){
+    return false;
+  }
+  if(preTeam == "BIZ" && str == 'BIZ'){
+    return false;
+  }
+  return true;
 }
 
 /**
@@ -696,6 +736,19 @@ function changePrize() {
 /**
  * 随机抽奖
  */
+// 랜덤함수
+function myRandom(num, preTeam){
+  // 2번까지만 작동하는 함수
+  if (preTeam == "web") {
+    return Math.floor((Math.random() * 4)+4); // 0-3
+  }
+  else if(preTeam == "meta"){
+    return Math.floor((Math.random() * 5)); // 4-8
+  }
+  return Math.floor(Math.random() * num);
+  
+}
+
 function random(num) {
   // Math.floor取到0-num-1之间数字的概率是相等的
   return Math.floor(Math.random() * num);
