@@ -14,6 +14,8 @@ const {
   saveErrorDataFile
 } = require("./help");
 
+const apiPath = "";
+
 let app = express(),
   router = express.Router(),
   cwd = process.cwd(),
@@ -45,7 +47,7 @@ if (process.argv.length > 2) {
 app.use(express.static(cwd));
 
 //请求地址为空，默认重定向到index.html文件
-app.get("/", (req, res) => {
+app.get(apiPath+"/", (req, res) => {
   res.redirect(301, "index.html");
 });
 
@@ -65,7 +67,7 @@ app.post("*", (req, res, next) => {
 });
 
 // 获取之前设置的数据
-router.post("/getTempData", (req, res, next) => {
+router.post(apiPath+"/getTempData", (req, res, next) => {
   getLeftUsers();
   res.json({
     cfgData: cfg,
@@ -75,7 +77,7 @@ router.post("/getTempData", (req, res, next) => {
 });
 
 // 获取所有用户
-router.post("/reset", (req, res, next) => {
+router.post(apiPath+"/reset", (req, res, next) => {
   luckyData = {};
   errorData = [];
   log(`重置数据成功`);
@@ -88,19 +90,19 @@ router.post("/reset", (req, res, next) => {
 });
 
 // 获取所有用户
-router.post("/getUsers", (req, res, next) => {
+router.post(apiPath+"/getUsers", (req, res, next) => {
   res.json(curData.users);
   log(`成功返回抽奖用户数据`);
 });
 
 // 获取奖品信息
-router.post("/getPrizes", (req, res, next) => {
+router.post(apiPath+"/getPrizes", (req, res, next) => {
   // res.json(curData.prize);
   log(`成功返回奖品数据`);
 });
 
 // 保存抽奖数据
-router.post("/saveData", (req, res, next) => {
+router.post(apiPath+"/saveData", (req, res, next) => {
   let data = req.body;
   setLucky(data.type, data.data)
     .then(t => {
@@ -118,7 +120,7 @@ router.post("/saveData", (req, res, next) => {
 });
 
 // 保存抽奖数据
-router.post("/errorData", (req, res, next) => {
+router.post(apiPath+"/errorData", (req, res, next) => {
   let data = req.body;
   setErrorData(data.data)
     .then(t => {
@@ -136,7 +138,7 @@ router.post("/errorData", (req, res, next) => {
 });
 
 // 保存数据到excel中去
-router.post("/export", (req, res, next) => {
+router.post(apiPath+"/export", (req, res, next) => {
   let type = [1, 2, 3, 4, 5, defaultType],
     outData = [["工号", "姓名", "部门"]];
   cfg.prizes.forEach(item => {

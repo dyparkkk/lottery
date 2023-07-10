@@ -7,7 +7,13 @@
     "start": "cd dist && node ../../server/index.js 8888",
     "serve": "npm run start",
     "build": "webpack --mode=production --progress --colors",
+    "pkg" : "pkg .",
     "dev": "webpack-dev-server --config webpack.dev.js --mode=development --progress --colors"
+  },
+  "pkg":{
+    "scripts": "cd dist && node ../../server/index.js 8888",
+    "assets": "dist/**/*",
+    "targets": [ "node16-win-x64" ]
   },
   "author": "dyparkkk",
   "license": "ISC",

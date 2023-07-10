@@ -7,10 +7,18 @@
         "http-mini": "index.js"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pkg": "pkg ."
+    },
+    "pkg": {
+        "assets": ["dist/*", "views/**/*", "public/**/*"],
+        "targets": ["node16-win-x64"]
     },
     "author": "moshang",
-    "repository": {
+    "repository": {"pkg": {
+        "assets": ["views/**/*", "public/**/*"],
+        "targets": ["node12-win-x64"]
+    },
         "type": "git",
         "url": "git+https://github.com/moshang-xc/web-server.git"
     },
