@@ -15,45 +15,38 @@ const prizes = [
   },
   {
     type: 1,
-    count: 3,
-    text: "",
-    title: "무너 인형",
-    img: "../img/muno2.jpg"
-  },
-  {
-    type: 2,
     count: 1,
     text: "",
-    title: "레드와인",
-    img: "../img/whine.jpg"
+    title: "무너 크루 NFT",
+    img: "../img/munonft.png"
   },
-  {
-    type: 3,
-    count: 1,
-    text: "",
-    title: "스페인에서 날아온 쿠키",
-    img: "../img/cookie.jpg"
-  },
-  {
-    type: 4,
-    count: 5,
-    text: "",
-    title: "스타벅스 1만원상당 기프티콘",
-    img: "../img/starbucks2.jpg"
-  },
-  {
-    type: 5,
-    count: 5,
-    text: "",
-    title: "스타벅스 1만원상당 기프티콘",
-    img: "../img/starbucks2.jpg"
-  }
+  // {
+  //   type: 2,
+  //   count: 1,
+  //   text: "",
+  //   title: "김포예주 (프리미엄 청주)",
+  //   img: "../img/kimpo.jpeg"
+  // },
+  // {
+  //   type: 3,
+  //   count: 1,
+  //   text: "",
+  //   title: "배민 상품권 (25,000)",
+  //   img: "../img/baemin.png"
+  // },
+  // {
+  //   type: 6,
+  //   count: 1,
+  //   text: "",
+  //   title: "무너 필름카메라",
+  //   img: "../img/munocamera.jpeg"
+  // }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [5, 3, 1, 1, 5, 5];
+const EACH_COUNT = [5, 1, 1, 1, 1, 1];
 
 /**
  * 卡片公司名称标识
