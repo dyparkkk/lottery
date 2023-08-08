@@ -15,10 +15,10 @@ const prizes = [
   },
   {
     type: 1,
-    count: 1,
+    count: 5,
     text: "",
-    title: "무너 크루 NFT",
-    img: "../img/munonft.png"
+    title: "스타벅스 ",
+    img: "../img/ahah.png"
   },
   // {
   //   type: 2,
