@@ -15,32 +15,39 @@ const prizes = [
   },
   {
     type: 1,
-    count: 5,
+    count: 1,
     text: "",
-    title: "스타벅스 ",
-    img: "../img/ahah.png"
+    title: "스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
   },
-  // {
-  //   type: 2,
-  //   count: 1,
-  //   text: "",
-  //   title: "김포예주 (프리미엄 청주)",
-  //   img: "../img/kimpo.jpeg"
-  // },
-  // {
-  //   type: 3,
-  //   count: 1,
-  //   text: "",
-  //   title: "배민 상품권 (25,000)",
-  //   img: "../img/baemin.png"
-  // },
-  // {
-  //   type: 6,
-  //   count: 1,
-  //   text: "",
-  //   title: "무너 필름카메라",
-  //   img: "../img/munocamera.jpeg"
-  // }
+  {
+    type: 2,
+    count: 1,
+    text: "",
+    title: "스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
+  },
+  {
+    type: 3,
+    count: 1,
+    text: "",
+    title: "스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
+  },
+  {
+    type: 4,
+    count: 1,
+    text: "",
+    title: "스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
+  },
+  {
+    type: 5,
+    count: 1,
+    text: "",
+    title: "스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
+  }
 ];
 
 /**
