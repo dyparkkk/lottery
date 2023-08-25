@@ -8,7 +8,7 @@ RUN npm install -g npm@9.6.2
 LABEL maintainer="YIN"
 
 # Add the application source code to the container
-ADD lottery.tar.gz  /
+COPY .  /lottery
 
 # Set the working directory to the root directory of the application
 WORKDIR /lottery
@@ -24,10 +24,10 @@ RUN chown -R root /lottery \
     && npm run build
 
 # Expose port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 8888
 
 # Set the working directory to the product directory
 WORKDIR /lottery/product
 
 # Start the server
-CMD ["npm", "run", "serve"]
+CMD ["npm", "run", "start"]
