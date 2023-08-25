@@ -17,36 +17,15 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
-    title: "클라우드베이 (소비뇽블랑)",
-    img: "../img/cloud.jpg"
-  },
-  {
-    type: 2,
-    count: 1,
-    text: "",
-    title: "베라톤 (스페인와인)",
-    img: "../img/beraton.jpg"
-  },
-  {
-    type: 3,
-    count: 1,
-    text: "",
-    title: "베라톤 (스페인와인)",
-    img: "../img/beraton.jpg"
-  },
-  {
-    type: 4,
-    count: 3,
-    text: "",
-    title: "스타벅스 기프티콘",
-    img: "../img/sb.jpg"
+    title: "팀 회식비 20만원",
+    img: "../img/team.png"
   }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [5, 1, 1, 1, 3];
+const EACH_COUNT = [5, 1];
 
 /**
  * 卡片公司名称标识
