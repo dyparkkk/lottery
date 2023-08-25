@@ -17,43 +17,36 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
-    title: "스타벅스 아메리카노",
-    img: "../img/ahah.jpg"
+    title: "클라우드베이 (소비뇽블랑)",
+    img: "../img/cloud.jpg"
   },
   {
     type: 2,
     count: 1,
     text: "",
-    title: "스타벅스 아메리카노",
-    img: "../img/ahah.jpg"
+    title: "베라톤 (스페인와인)",
+    img: "../img/beraton.jpg"
   },
   {
     type: 3,
     count: 1,
     text: "",
-    title: "스타벅스 아메리카노",
-    img: "../img/ahah.jpg"
+    title: "베라톤 (스페인와인)",
+    img: "../img/beraton.jpg"
   },
   {
     type: 4,
-    count: 1,
+    count: 3,
     text: "",
-    title: "스타벅스 아메리카노",
-    img: "../img/ahah.jpg"
-  },
-  {
-    type: 5,
-    count: 1,
-    text: "",
-    title: "스타벅스 아메리카노",
-    img: "../img/ahah.jpg"
+    title: "스타벅스 기프티콘",
+    img: "../img/sb.jpg"
   }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [5, 1, 1, 1, 1, 1];
+const EACH_COUNT = [5, 1, 1, 1, 3];
 
 /**
  * 卡片公司名称标识
