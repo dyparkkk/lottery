@@ -17,41 +17,41 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
-    title: "클라우드베이 (소비뇽블랑)",
-    img: "../img/cloud.jpg"
+    title: "모바일 백화점 상품권 3만원",
+    img: "../img/sinsegea.jpg"
   },
   {
     type: 2,
-    count: 1,
+    count: 2,
     text: "",
-    title: "베라톤 (스페인와인)",
-    img: "../img/beraton.jpg"
+    title: "치킨세트 모바일 쿠폰",
+    img: "../img/chickin.jpg"
   },
   {
     type: 3,
-    count: 1,
+    count: 5,
     text: "",
-    title: "베라톤 (스페인와인)",
-    img: "../img/beraton.jpg"
+    title: "스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
   },
   {
     type: 4,
-    count: 3,
+    count: 5,
     text: "",
-    title: "스타벅스 기프티콘",
-    img: "../img/sb.jpg"
+    title: "스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
   }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [5, 1, 1, 1, 3];
+const EACH_COUNT = [5, 1, 2, 5, 5];
 
 /**
  * 卡片公司名称标识
  */
-const COMPANY = "LG U+";
+const COMPANY = "LG 전자";
 
 module.exports = {
   prizes,
