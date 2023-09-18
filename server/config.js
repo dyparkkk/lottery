@@ -17,25 +17,39 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
+    title: "[재추첨용] 치킨세트 모바일 쿠폰",
+    img: "../img/chickin.jpg"
+  },
+  {
+    type: 2,
+    count: 1,
+    text: "",
+    title: "[재추첨용] 스타벅스 아메리카노",
+    img: "../img/ahah.jpg"
+  },
+  {
+    type: 3,
+    count: 1,
+    text: "",
     title: "모바일 백화점 상품권 3만원",
     img: "../img/sinsegea.jpg"
   },
   {
-    type: 2,
+    type: 4,
     count: 2,
     text: "",
     title: "치킨세트 모바일 쿠폰",
     img: "../img/chickin.jpg"
   },
   {
-    type: 3,
+    type: 5,
     count: 5,
     text: "",
     title: "스타벅스 아메리카노",
     img: "../img/ahah.jpg"
   },
   {
-    type: 4,
+    type: 6,
     count: 5,
     text: "",
     title: "스타벅스 아메리카노",
@@ -46,7 +60,7 @@ const prizes = [
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [5, 1, 2, 5, 5];
+const EACH_COUNT = [5,1, 1, 1, 2, 5, 5];
 
 /**
  * 卡片公司名称标识
