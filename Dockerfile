@@ -24,7 +24,7 @@ RUN chown -R root /lottery \
     && npm run build
 
 # Expose port 8080 to the outside world
-EXPOSE 8888
+EXPOSE 8889
 
 # Set the working directory to the product directory
 WORKDIR /lottery/product
