@@ -41,6 +41,7 @@ let camera,
 
 let rotateObj;
 let preTeam = "none";
+let teamCount = 0;
 
 let selectedCardIndex = [],
   rotate = false,
@@ -244,6 +245,7 @@ function bindEvent() {
           return;
         }
         preTeam = "none";
+        teamCount = 0;
         addQipao("모든 데이터 초기화");
         addHighlight();
         resetCard();
@@ -643,6 +645,9 @@ function lottery() {
       let luckyId = random(leftCount);
       addQipao();
       while(true){
+        if(teamCount >= 2){ // 3번째부터 팀체크를 하지 않음
+          break;
+        }
         if(checkTeam(luckyId, preTeam)){
           break;
         }
@@ -675,6 +680,7 @@ function lottery() {
 function checkTeam(luckyId){
   let users = basicData.leftUsers[luckyId].slice();
   let str = new String(users[2]);
+  
   // addQipao(`preTeam = ${preTeam}, now = ${str}`);
   if(preTeam == "none"){
     if (str == 'dev'){
@@ -683,6 +689,7 @@ function checkTeam(luckyId){
     else if (str=='BIZ'){
       preTeam = 'BIZ';
     }
+    teamCount++;
     return true;
   }
 
@@ -692,6 +699,7 @@ function checkTeam(luckyId){
   if(preTeam == "BIZ" && str == 'BIZ'){
     return false;
   }
+  teamCount++;
   return true;
 }
 

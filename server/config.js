@@ -10,29 +10,36 @@ const prizes = [
   {
     type: 0,
     count: 1000,
-    title: "스벅",
+    title: "-",
     text: ""
   },
   {
     type: 1,
     count: 1,
     text: "",
-    title: "회식지원-20만원",
-    img: "../img/money.png"
+    title: "Two Hands 와인 3병",
+    img: "../img/win4.jpeg"
   },
   {
     type: 2,
     count: 1,
     text: "",
-    title: "일품진로-엑스트라 프리미엄",
-    img: "../img/whayo.jpg"
+    title: "회식비 지원권-20만원",
+    img: "../img/20.jpeg"
+  },
+  {
+    type: 3,
+    count: 1,
+    text: "",
+    title: "회식비 지원권-20만원",
+    img: "../img/20.jpeg"
   }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [5, 1, 1];
+const EACH_COUNT = [5, 1, 1, 1];
 
 /**
  * 卡片公司名称标识
