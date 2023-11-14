@@ -17,71 +17,43 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
-    title: "키크론 Q1 Pro 기계식 적축 키보드",
-    img: "../img/image (1).png"
+    title: "LG아트센터 상품권 10만원",
+    img: "../img/art.jpeg"
   },
   {
     type: 2,
     count: 1,
     text: "",
-    title: "[다시뽑기] LG 틔운 미니",
-    img: "../img/image (2).png"
+    title: "Two Hands 와인",
+    img: "../img/win1.jpeg"
   },
   {
     type: 3,
-    count: 2,
+    count: 1,
     text: "",
-    title: "LG 틔운 미니",
-    img: "../img/image (2).png"
+    title: "Moldavian 와인세트",
+    img: "../img/win2.jpeg"
   },
   {
     type: 4,
     count: 1,
     text: "",
-    title: "[다시뽑기] LG아트센터 상품권 10만원",
-    img: "../img/image (3).png"
+    title: "Dr.Groot 트리트먼스 세트",
+    img: "../img/trm.jpeg"
   },
   {
     type: 5,
-    count: 3,
-    text: "",
-    title: "LG아트센터 상품권 10만원",
-    img: "../img/image (3).png"
-  },
-  {
-    type: 6,
     count: 1,
     text: "",
-    title: "[다시뽑기] 라라웨어 미니 온풍기",
-    img: "../img/image (4).png"
-  },
-  {
-    type: 7,
-    count: 4,
-    text: "",
-    title: "라라웨어 미니 온풍기",
-    img: "../img/image (4).png"
-  },
-  {
-    type: 8,
-    count: 1,
-    text: "",
-    title: "[다시뽑기] 루메나 듀얼 가습기",
-    img: "../img/image (5).png"
-  },
-  {
-    type: 9,
-    count: 5,
-    text: "",
-    title: "루메나 듀얼 가습기",
-    img: "../img/image (5).png"
+    title: "서울대 필기구세트",
+    img: "../img/pens.jpeg"
   }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 1, 2, 1, 3, 1, 4, 1, 5];
+const EACH_COUNT = [1, 1, 1, 1, 1, 1];
 
 /**
  * 卡片公司名称标识
