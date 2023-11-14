@@ -1,6 +1,6 @@
 
 
-docker stop lottery
-docker rm lottery
-docker build . -t lottery
-docker run -d --name lottery -p 8889:8889 lottery
+docker stop lottery-team
+docker rm lottery-team
+docker build . -t lottery-team
+docker run -d --name lottery -p 8889:8889 lottery-team
