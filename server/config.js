@@ -17,43 +17,36 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
-    title: "LG아트센터 상품권 10만원",
-    img: "../img/art.jpeg"
+    title: "양효석님과의 식사(재추첨)",
+    img: "../img/launch.png"
   },
   {
     type: 2,
     count: 1,
     text: "",
-    title: "Two Hands 와인",
-    img: "../img/win1.jpeg"
+    title: "바나나우유(재추첨)",
+    img: "../img/banana.png"
   },
   {
     type: 3,
-    count: 1,
+    count: 3,
     text: "",
-    title: "Moldavian 와인세트",
-    img: "../img/win2.jpeg"
+    title: "양효석님과의 식사",
+    img: "../img/launch.png"
   },
   {
     type: 4,
-    count: 1,
+    count: 7,
     text: "",
-    title: "Dr.Groot 트리트먼스 세트",
-    img: "../img/trm.jpeg"
+    title: "바나나우유",
+    img: "../img/banana.png"
   },
-  {
-    type: 5,
-    count: 1,
-    text: "",
-    title: "서울대 필기구세트",
-    img: "../img/pens.jpeg"
-  }
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 1, 1, 1, 1];
+const EACH_COUNT = [1, 1, 1, 3, 7];
 
 /**
  * 卡片公司名称标识
