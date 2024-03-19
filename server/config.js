@@ -17,36 +17,36 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
-    title: "양효석님과의 식사(재추첨)",
-    img: "../img/launch.png"
+    title: "ㅎㅅㄴ ㅈㅅㅅㅅ",
+    img: "../img/who.png"
   },
   {
     type: 2,
     count: 1,
     text: "",
-    title: "바나나우유(재추첨)",
-    img: "../img/banana.png"
+    title: "ㅂㄴㄴㅁ ㅇㅇ",
+    img: "../img/bnn.png"
   },
-  {
-    type: 3,
-    count: 3,
-    text: "",
-    title: "양효석님과의 식사",
-    img: "../img/launch.png"
-  },
-  {
-    type: 4,
-    count: 7,
-    text: "",
-    title: "바나나우유",
-    img: "../img/banana.png"
-  },
+  // {
+  //   type: 3,
+  //   count: 3,
+  //   text: "",
+  //   title: "양효석님과의 식사",
+  //   img: "../img/launch.png"
+  // },
+  // {
+  //   type: 4,
+  //   count: 7,
+  //   text: "",
+  //   title: "바나나우유",
+  //   img: "../img/banana.png"
+  // },
 ];
 
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 1, 3, 7];
+const EACH_COUNT = [1, 1, 1];
 
 /**
  * 卡片公司名称标识
