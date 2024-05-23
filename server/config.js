@@ -22,10 +22,10 @@ const prizes = [
   },
   {
     type: 2,
-    count: 1,
+    count: 3,
     text: "",
-    title: "클라우디 베이 쇼비뇽블랑",
-    img: "../img/wine.png"
+    title: "화이트와인 3명",
+    img: "../img/wine3.png"
   },
   {
     type: 3,
@@ -46,7 +46,7 @@ const prizes = [
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 1, 4];
+const EACH_COUNT = [1, 1, 3, 4];
 
 /**
  * 卡片公司名称标识
