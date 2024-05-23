@@ -17,23 +17,23 @@ const prizes = [
     type: 1,
     count: 1,
     text: "",
-    title: "ㅎㅅㄴ ㅈㅅㅅㅅ",
-    img: "../img/who.png"
+    title: "회식비 10만원 상품권",
+    img: "../img/10.png"
   },
   {
     type: 2,
     count: 1,
     text: "",
-    title: "ㅂㄴㄴㅁ ㅇㅇ",
-    img: "../img/bnn.png"
+    title: "클라우디 베이 쇼비뇽블랑",
+    img: "../img/wine.png"
   },
-  // {
-  //   type: 3,
-  //   count: 3,
-  //   text: "",
-  //   title: "양효석님과의 식사",
-  //   img: "../img/launch.png"
-  // },
+  {
+    type: 3,
+    count: 4,
+    text: "",
+    title: "스타벅스 기프티콘 4명",
+    img: "../img/coffee.png"
+  },
   // {
   //   type: 4,
   //   count: 7,
@@ -46,7 +46,7 @@ const prizes = [
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 1];
+const EACH_COUNT = [1, 1, 1, 4];
 
 /**
  * 卡片公司名称标识
